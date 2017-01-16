@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
                     for(int i=0; i<month; i++){
                         output = (output + saved) * 1.00417;
+                        output = (double) (int) (output*1000);
+                        output = (output/1000);
                     }
 
                     outputTV.setText("The amount of money in your account after: "+month+" month's is: "+output);
